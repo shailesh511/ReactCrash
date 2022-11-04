@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { useState } from 'react';
 import ChildToParentProp from './Components/ChildToParentProp';
 import APIhandle from './Components/APIhandle';
+import ClassBasedComp from './Components/ClassBasedComp';
 
 const App = () =>{
   const [color, setColor] = useState(null)
@@ -12,10 +13,10 @@ const App = () =>{
  
   return(
     <div>
-        <h1 style={{backgroundColor:`${color}`}}>hiii</h1>
-        <ChildToParentProp change={change}/>
-        <APIhandle/>
-        
+        {/* <h1 style={{backgroundColor:`${color}`}}>hiii</h1>
+        <ChildToParentProp change={change}/> */}
+        {/* <APIhandle/> */}
+        <ClassBasedComp activity={"try cricket"} certificate={"abcdef"}/>
         {/* <HookInFunctionBased/>
         <LifeCycleMethods/>
         <ContextAPIEg/> */}
